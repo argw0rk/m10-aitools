@@ -5,11 +5,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #FFE1FE;
 }
 
 header {
-    background: #333;
+    background: #A381F2;
     color: #fff;
     padding: 1rem;
     text-align: center;
@@ -50,7 +50,7 @@ h2 {
 
 .item {
     flex: 1 1 calc(30% - 20px);
-    background: #eaeaea;
+    background: #CAA7DD;
     border-radius: 5px;
     padding: 10px;
     text-align: center;
@@ -64,14 +64,14 @@ h2 {
 button {
     margin-top: 10px;
     padding: 10px;
-    background: #333;
+    background: #CAA7DD;
     color: white;
     border: none;
     cursor: pointer;
 }
 
 button:hover {
-    background: #555;
+    background: #A381F2;
 }
 
 form {
@@ -91,7 +91,7 @@ form input, form textarea {
 footer {
     text-align: center;
     padding: 10px;
-    background: #333;
+    background:#888;
     color: white;
 }
 
