@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art Portfolio & Shop</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -56,23 +56,30 @@
                 <img src="images/daidusandemirichu.png" alt="Shop Artwork 1">
                 <h3>Daidus & Emirichu</h3>
                 <p>$100.00</p>
-                <button>Add to Cart</button>
+				 <button onclick="addToCart('Daidus & Emirichu', 100)">Add to Cart</button>
             </div>
             <div class="item">
                 <img src="images/kumabear2.PNG" alt="Shop Artwork 2">
                 <h3>Yuna bear</h3>
                 <p>$150.00</p>
-                <button>Add to Cart</button>
+                 <button onclick="addToCart('Yuna bear', 100)">Add to Cart</button>
             </div>
             <div class="item">
                 <img src="images/pokemon-team.PNG" alt="Shop Artwork 3">
                 <h3>Pokemon</h3>
                 <p>$200.00</p>
-                <button>Add to Cart</button>
+                 <button onclick="addToCart('pokemon', 100)">Add to Cart</button>
             </div>
             <!-- Add more shop items as needed -->
         </div>
     </section>
+	<section id="cart">
+        <h2>Shopping Cart</h2>
+        <div id="cart-items"></div>
+        <p>Total: $<span id="total-price">0</span></p>
+        <button id="checkout">Checkout</button>
+    </section>
+	
 
     <section id="contact">
         <h2>Contact Me</h2>
@@ -93,5 +100,6 @@
     <footer>
         <p>&copy; 2024 My Art Portfolio & Shop</p>
     </footer>
+	 <script src="script.js"></script>
 </body>
 </html>
