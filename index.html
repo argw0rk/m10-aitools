@@ -1,10 +1,97 @@
 <!doctype html>
-<html>
-<head>
+<html lang="en">
 <meta charset="utf-8">
 <title>m10-aitools</title>
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Portfolio & Shop</title>
+    <link rel="stylesheet" href="main.css">
 </head>
-
 <body>
+    <header>
+        <h1>My Art Portfolio & Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Welcome to my art portfolio and shop! I am an artist specializing in [your specialty]. Explore my work and feel free to purchase any pieces you love.</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="flex-container">
+            <div class="item">
+                <img src="art1.jpg" alt="Artwork 1">
+                <h3>Artwork Title 1</h3>
+                <p>Description of Artwork 1.</p>
+            </div>
+            <div class="item">
+                <img src="art2.jpg" alt="Artwork 2">
+                <h3>Artwork Title 2</h3>
+                <p>Description of Artwork 2.</p>
+            </div>
+            <div class="item">
+                <img src="art3.jpg" alt="Artwork 3">
+                <h3>Artwork Title 3</h3>
+                <p>Description of Artwork 3.</p>
+            </div>
+            <!-- Add more artwork items as needed -->
+        </div>
+    </section>
+
+    <section id="shop">
+        <h2>Shop</h2>
+        <div class="flex-container">
+            <div class="item">
+                <img src="shop-art1.jpg" alt="Shop Artwork 1">
+                <h3>Shop Artwork Title 1</h3>
+                <p>$100.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="shop-art2.jpg" alt="Shop Artwork 2">
+                <h3>Shop Artwork Title 2</h3>
+                <p>$150.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="shop-art3.jpg" alt="Shop Artwork 3">
+                <h3>Shop Artwork Title 3</h3>
+                <p>$200.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <!-- Add more shop items as needed -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Art Portfolio & Shop</p>
+    </footer>
 </body>
 </html>
